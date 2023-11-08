@@ -12,5 +12,8 @@ spec:
   project: default
   source:
     path: deploy
+    helm:
+      valueFiles:
+        - values.dev.yaml
     repoURL: https://github.com/utsabroy/movie-info-service
     targetRevision: HEAD
