@@ -11,6 +11,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: deploy
+    path: .k8s/overlays/dev/
     repoURL: https://github.com/utsabroy/movie-catalog-service
-    targetRevision: HEAD
+    targetRevision: eks-kustomize
