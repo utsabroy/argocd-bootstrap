@@ -11,9 +11,6 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: deploy
-    helm:
-      valueFiles:
-        - values.dev.yaml
+    path: .k8s/overlays/dev/
     repoURL: https://github.com/utsabroy/movie-info-service
-    targetRevision: HEAD
+    targetRevision: eks-kustomize
